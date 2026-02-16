@@ -1,0 +1,28 @@
+<header class="app-header">
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a routerLink="/" class="brand-link">
+        <span class="brand-icon">🛒</span>
+        <span class="brand-text">{{ title() }}</span>
+      </a>
+    </div>
+
+    <div class="nav-menu">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="nav-link"
+        ></a>
+
+    </div>
+  </nav>
+</header>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="app-footer">
+
+</footer>
